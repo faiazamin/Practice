@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample javascript 8</title>
+  </head>
+  <body>
+    <h1>Java Script Arra</h1>
+    <p>results are shown below </p>
+    <p id="math0"></p>
+    <p id="math1"></p>
+  /*  <p id="math2"></p>
+    <p id="math3"></p>
+    <p id="math4"></p>
+    <p id="math5"></p>
+    <p id="math6"></p> */
+    <script type="text/javascript">
+      var x = [1,55,85,66,99];
+      x.sort();
+      document.getElementById("math1").innerHTML = x.toString();
+      x.reverse();
+      document.getElementById("math0").innerHTML = x.toString();
+    /*  x.pop();
+      document.getElementById("math3").innerHTML = x.join(" * ");
+      x.push("99");
+      document.getElementById("math4").innerHTML = x.join(" * ");
+      x.shift();
+      document.getElementById("math5").innerHTML = x.join(" * ");
+      x.unshift("1");
+      document.getElementById("math6").innerHTML = x.join(" * ");
+      delete x[0];
+      document.getElementById("math2").innerHTML = x.toString();*/
+    </script>
+  </body>
+</html>

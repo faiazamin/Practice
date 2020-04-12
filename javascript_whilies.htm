@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Java Script whiles</title>
+  </head>
+  <body>
+
+    <button onclick="fun1()" type="submit"> for first function </button>
+    <p id="demo0"></p>
+    <button onclick="fun2()" type="submit"> for second function </button>
+    <p id="demo1"></p>
+  <script>
+    function fun1(){
+      var x=1;
+      var txt = "";
+      while(x <= 10){
+        txt += x+" * ";
+        x++;
+      }
+      document.getElementById('demo0').innerHTML = txt;
+    }
+    function fun2(){
+      var x=1;
+      var txt = "";
+      do {
+        txt += x+" * ";
+        x++;
+      } while (x <= 10);
+      document.getElementById('demo1').innerHTML = txt;
+    }
+
+
+  </script>
+
+  </body>
+</html>

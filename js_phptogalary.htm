@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>My Web Galary</title>
+    <style media="screen">
+      body{
+        background: #232;
+        margin-top: auto;
+        font-family: arial;
+        color: white;
+      }
+
+      .thumbnails img{
+        height: auto;
+        border: 4px solid #545;
+        padding: 1px;
+        margin: 0 10px 10px 0;
+      }
+
+      .thumbnails img : hover{
+        border: 4px solid #456;
+      }
+
+      .preview img{
+        border: 4px solid #542;
+        padding: 1px;
+        margin: 0 10px 10px 0;
+        width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My Photo Galary</h1>
+
+    <br>
+
+    <div class="container" id="container" align="center">
+
+    <div class="thumbnails">
+      <img src="pic\car_1.jpg" alt="" onmouseover="preview.src=img1.src" name="img1">
+      <img src="pic\car_2.jpg" alt="" onmouseover="preview.src=img2.src" name="img2">
+      <img src="pic\car_3.jpg" alt="" onmouseover="preview.src=img3.src" name="img3">
+      <img src="pic\car_4.jpg" alt="" onmouseover="preview.src=img4.src" name="img4">
+    </div>
+
+    <div class="preview" align="center">
+
+      <img src="pic\car_1.jpg" id="preview" alt="">
+
+    </div>
+
+    </div>
+
+  </body>
+</html>
